@@ -8,26 +8,14 @@ You ship a script that organizes your computer, we ship you something to organiz
 
 ## Creating a project
 
-LATER
-
-STUFF
-
-HERE
+You can create anything the organizes for digital life!
 
 ## Submitting
 
-LATER
-
-STUFF
-
-HERE
+Go to [`clutter.niiccoo2.xyz`](https://clutter.niiccoo2.xyz/) and pretend we finished the site!
 
 ## Rewards
 
-LATER
-
-STUFF
-
-HERE (shocking)
+{rewards_here}
 
 ---

@@ -3,8 +3,8 @@ version: '3.8'
 services:
   clutter-app:
     build: .
-    ports:
-      - '3000:80'
+    expose:
+      - '80'
     restart: unless-stopped
     environment:
       - NODE_ENV=production

@@ -165,6 +165,9 @@ img {
           <button style="background-color: #e9e7d9" class="handwritten-big drab-dark-brown-2 p-4 rounded hover:scale-105">
             <a href="/rewards">REWARDS</a>
           </button>
+          <button style="background-color: #e9e7d9" class="handwritten-big drab-dark-brown-2 p-4 rounded hover:scale-105">
+            <a href="/AI">IDEAS</a>
+          </button>
         </div>
 
 

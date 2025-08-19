@@ -25,116 +25,11 @@
   font-style: normal;
 }
 
-.drab-dark-brown-2 {
-  color: #594e36; 
-}
-
-
-.logo-image {
-  display: block;
-  width: 40vw;       
-  max-width: 400px;  
-  height: auto;
-  margin: 0 auto;
-}
-
-@media (max-width: 768px) {
-  .logo-image {
-    width: 70vw;     
-    max-width: 300px;
-    max-height: 20vh;
-  }
-}
-
-@media (max-width: 480px) {
-  .logo-image {
-    width: 85vw;     
-    max-width: 260px;
-  }
-}
-
-.trash-wrapper {
-  position: fixed;      
-  bottom: 0;            
-  left: 50%;           
-  transform: translateX(-50%) rotate(0deg);
-  width: 100%;            
-  text-align: center;
-  z-index: 0;           
-  margin: 0;        
-  pointer-events: none;
-}
-
-.trash-wrapper img {
-  width: 100%;          
-  height: auto;
-  display: block;
-}
-
-@media (max-width: 768px) {
-  .trash-wrapper {
-    height: auto; 
-  }
-}
-
-@media (max-width: 480px) {
-  .trash-wrapper {
-    display: none;
-    display: none;
-  }
-}
-
-.made_with_heart {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background: transparent;
-  text-align: center;
-  padding: 3rem 0;
-  z-index: 10;
-  margin-top: 0 !important;
-  line-height: 4;
-}
-
-/* @media (max-width: 768px) {
-  .made_with_heart {
-    margin-top: 0
-    font-size: 0.9rem;
-    flex-direction: column;
-  }
-} */
-
-@media (max-width: 375px) {
-  .made_with_heart {
-    display: none;
-    display: none;
-  }
-}
-
-@media (max-width: 768px) {
-  .names {
-    margin-left: 0.4vw !important;  
-    margin-right: 0.4vw !important;
-  }
-  .y_tag {
-    margin-right: 0.4vw !important;  
-  }
-}
-
-body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
+.center {
   display: flex;
-  flex-direction: column;
+  justify-content: center; /* Horizontal centering */
+  /*align-items: center;     /* Vertical centering */
 }
-
-img {
-  position: relative;
-  z-index: -1; 
-}
-
 
 </style>
 
@@ -149,7 +44,7 @@ img {
 
     const body = {
       messages: [{ role: "system", content: "You are an AI idea generator for Hack Club YSWS Clutter give one simple useful and doable tool website or app idea under 15 words without a name or special characters" }],
-      model: "qwen/qwen3-32b"
+      model: "openai/gpt-oss-20b"
     };
 
     try {
@@ -185,14 +80,16 @@ img {
   }
 </script>
 
-<div style="background-color: #594e36; min-height: 100vh; padding: 2%">
-  <p class="rounded-lg inline-block" style="text-decoration: none; display: block; width: 100%; line-height: 1.1; color: white; font-size: 1.5rem;">
-    {#if responseText}
-      {responseText}
-    {:else}
-      Loading...
-    {/if}
-  </p>
+<div style="background-color: #594e36; min-height: 100vh; padding: 2%;">
+  <!-- <div class="center"> DOES NOT WORK -->
+    <p class="handwritten rounded-lg inline-block" style="text-decoration: none; display: block; width: 100%; line-height: 1.1; color: white; font-size: 1.5rem;">
+      {#if responseText}
+        {responseText}
+      {:else}
+        Loading...
+      {/if}
+    </p>
+  <!-- </div> DOES NOT WORK -->
   <br>
   <!-- <a href="/" style="background-color: white; color: #594E36;" class="handwritten-big p-4 rounded hover:scale-105 inline: block; text-decoration: none; margin-right: 1rem;">Main Site</a> -->
   <div style="display: flex; gap: 0.5rem;">

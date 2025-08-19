@@ -163,13 +163,18 @@ img {
             <a href="/RSVP">RSVP</a>
           </button>
           <button style="background-color: #e9e7d9" class="handwritten-big drab-dark-brown-2 p-4 rounded hover:scale-105">
-            <a href="/rewards">REWARDS</a>
-          </button>
-          <button style="background-color: #e9e7d9" class="handwritten-big drab-dark-brown-2 p-4 rounded hover:scale-105">
             <a href="/AI">IDEAS</a>
           </button>
         </div>
 
+        <div style="position: relative; text-align: center; padding: 1rem; display: flex; justify-content: center; gap: 2rem;">
+          <p class="handwritten-big" style="color: white;">
+            Clutter gives you a $5/hour grant to organize your life.<br>
+            You can spend it on anything that helps —<br>
+            from a 1TB SSD to notebooks, bins, or sticky notes.<br>
+            We’ll also send you stickers 🎉
+          </p>
+        </div>
 
 
         <div class="text-center p-10 flex justify-center made_with_heart" style="position: relative; z-index: 1; font-weight: 700; color: #7e846b; overflow: hidden;">

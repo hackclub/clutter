@@ -31,11 +31,11 @@
   padding: 2%;
   gap: 20px; /* Adjust the gap size as needed */
 ">
-  <h1 class="handwritten-big" style="color: white;">
+  <p class="handwritten-big" style="color: white;">
     Clutter gives you a $5/hour grant to organize your life.<br>
     You can spend it on anything that helps — from a 1TB SSD to notebooks, bins, or sticky notes.<br>
     We’ll also send you stickers 🎉
-  </h1>
+  </p>
   <a href="/" style="
     display: inline-block; 
     padding: 0.5em 1em; 

@@ -148,7 +148,7 @@ img {
     const url = "https://ai.hackclub.com/chat/completions";
 
     const body = {
-      messages: [{ role: "system", content: "You are an ai idea generator for the hackclub ysws clutter. Please give the user clear concise ideas for tools, websites, or application that declutter the user's day to day life. Please respond with one idea be sure to make it clear if it is an app or website or ect.  Please don't include a name for the application just give the type and the idea, be sure to make the projet doable and useful. Make the output less than 15 words. Please dont include any special characters like \\\"\\\" or <>." }],
+      messages: [{ role: "system", content: "You are an AI idea generator for Hack Club YSWS Clutter give one simple useful and doable tool website or app idea under 15 words without a name or special characters" }],
       model: "qwen/qwen3-32b"
     };
 

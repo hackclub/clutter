@@ -137,8 +137,53 @@ img {
 
 
 </style>
+<script>
+  import { onMount } from "svelte";
 
-<body style="background-color: #594e36;">
+  let responseText = "";
+
+  async function sendMessage() {
+    const url = "https://ai.hackclub.com/chat/completions";
+
+    const body = {
+      messages: [{ role: "system", content: "You are an AI idea generator for Hack Club YSWS Clutter give one simple useful and doable tool website or app idea under 15 words without a name or special characters." }],
+      model: "openai/gpt-oss-20b"
+    };
+
+    try {
+      const res = await fetch(url, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(body)
+      });
+
+      if (!res.ok) {
+        throw new Error(`HTTP error! status: ${res.status}`);
+      }
+
+      const data = await res.json();
+      console.log(data); // full response
+      responseText = data.choices?.[0]?.message?.content || JSON.stringify(data);
+      responseText = (data.choices?.[0]?.message?.content || "")
+                  .replace(/<think>.*?<\/think>/gs, "");
+    } catch (err) {
+      console.error("Error sending request:", err);
+      // @ts-ignore
+      responseText = "Error: " + err.message;
+    }
+  }
+
+  onMount(() => {
+    sendMessage();
+  });
+  async function reload_tab() {
+    location.reload()
+  }
+</script>
+
+<div style="background-color: #594e36;">
     <div style="background-color: #594e36; overflow: hidden;">
         <div style="transform: rotate(10deg); overflow-x: hidden; padding: 1rem 0;">
             <img 
@@ -159,24 +204,32 @@ img {
         <br>
 
         <div style="position: relative; text-align: center; padding: 1rem; display: flex; justify-content: center; gap: 2rem;">
-          <button style="background-color: #e9e7d9" class="handwritten-big drab-dark-brown-2 p-4 rounded hover:scale-105">
-            <a href="/RSVP">RSVP</a>
-          </button>
-          <button style="background-color: #e9e7d9" class="handwritten-big drab-dark-brown-2 p-4 rounded hover:scale-105">
-            <a href="/AI">IDEAS</a>
+          <button style="background-color: #e9e7d9; font-size: 1.5rem;" class="handwritten-big drab-dark-brown-2 p-4 rounded hover:scale-105 px-20">
+            <a href="/RSVP">RSVP</a> <!-- Looks nice as Submit! so change once we begin. -->
           </button>
         </div>
 
-        <div style="position: relative; text-align: center; padding: 1rem; display: flex; justify-content: center; gap: 2rem;">
-          <p class="handwritten-big" style="color: white;">
+        <div style="position: relative; text-align: center; padding: 1rem; display: flex; justify-content: center; gap: 2rem; font-weight: 550; color: #7e846b;">
+          <p class="p-10" style="color: white;">
             Clutter gives you a $5/hour grant to organize your life.<br>
             You can spend it on anything that helps —<br>
             from a 1TB SSD to notebooks, bins, or sticky notes.<br>
             We’ll also send you stickers 🎉
           </p>
         </div>
+        <div style="position: relative; text-align: center; padding: 1rem; display: flex; flex-direction: column; align-items: center; gap: 0.5rem; font-weight: 550; color: #7e846b;">
+          <p class="p-10" style="color: white; margin: 0;">
+            {#if responseText}
+              Idea: {responseText}
+            {:else}
+              Loading...
+            {/if}
+          </p>
 
-
+          <button on:click={reload_tab} style="background-color: white; color: #594E36; font-size: 1rem;" class="handwritten-big p-2.5 rounded hover:scale-105 cursor-pointer">
+              New Idea
+          </button>
+        </div>
         <div class="text-center p-10 flex justify-center made_with_heart" style="position: relative; z-index: 1; font-weight: 700; color: #7e846b; overflow: hidden;">
             Made with  <span class="hover:animate-bounce">❤️</span>  b<a href="/3.14" class="y_tag">y</a> <a href="https://github.com/SuperNinjaCat5" style="margin-left: 0.2vw; margin-right: 0.2vw;" class="names"> Ben </a> & <a href="https://github.com/niiccoo2" style="margin-left: 0.2vw; margin-right: 0.2vw;" class="names"> Nico </a> 
         </div>  
@@ -184,4 +237,4 @@ img {
           <img src="images/trash_piles.png" alt="Clutter at the bottom">
         </div>
     </div>
-</body>
+</div>

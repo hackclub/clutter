@@ -212,9 +212,9 @@ img {
         <div style="position: relative; text-align: center; padding: 1rem; display: flex; justify-content: center; gap: 2rem; font-weight: 550; color: #7e846b;">
           <p class="p-10" style="color: white;">
             Clutter gives you a $5/hour grant to organize your life.<br>
-            You can spend it on anything that helps —<br>
-            from a 1TB SSD to notebooks, bins, or sticky notes.<br>
-            We’ll also send you stickers 🎉
+            You can spend it on anything that helps you organize your life—<br>
+            from a 1TB SSD to notebooks, to bins, or sticky notes. You can<br> get anything!
+            We’ll also send you some stickers! 🎉
           </p>
         </div>
         <div style="position: relative; text-align: center; padding: 1rem; display: flex; flex-direction: column; align-items: center; gap: 0.5rem; font-weight: 550; color: #7e846b;">

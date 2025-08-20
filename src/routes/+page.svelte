@@ -205,7 +205,7 @@ img {
 
         <div style="position: relative; text-align: center; padding: 1rem; display: flex; justify-content: center; gap: 2rem;">
           <button style="background-color: #e9e7d9; font-size: 1.5rem;" class="handwritten-big drab-dark-brown-2 p-4 rounded hover:scale-105 px-20">
-            <a href="/RSVP">RSVP</a> <!-- Looks nice as Submit! so change once we begin. -->
+            <a href="https://submit.hackclub.com/clutter">Submit</a> <!-- Looks nice as Submit! so change once we begin. -->
           </button>
         </div>
 

@@ -12,10 +12,10 @@ You can create anything the organizes for digital life!
 
 ## Submitting
 
-Go to [`clutter.hackclub.com`](https://clutter.hackclub.com/) and pretend we finished the site!
+Go to [`clutter.hackclub.com`](https://clutter.hackclub.com/) and fill out the form!
 
 ## Rewards
 
-{rewards_here}
+You get stickers + a $5 an hour grant to buy anything that organizes your digital life.
 
 ---

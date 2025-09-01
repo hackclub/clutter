@@ -146,7 +146,7 @@ img {
     const url = "https://ai.hackclub.com/chat/completions";
 
     const body = {
-      messages: [{ role: "system", content: "You are an AI idea generator for Hack Club YSWS Clutter give one simple useful and doable tool website or app idea under 15 words without a name or special characters." }],
+      messages: [{ role: "system", content: "You are an AI idea generator for Hack Club YSWS Clutter give one simple useful and doable tool website or app idea under 15 words without a name or special characters. Must be a real sentance and end with a period." }],
       model: "openai/gpt-oss-20b"
     };
 

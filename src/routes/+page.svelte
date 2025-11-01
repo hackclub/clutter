@@ -8,11 +8,21 @@
   <link href="https://fonts.googleapis.com/css2?family=Londrina+Shadow&family=Nata+Sans:wght@100..900&family=Orbitron:wght@400..900&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet" />
 
-  <meta property="og:title" content="Clutter - YSWS" />
-  <meta property="og:description" content="You ship a script that organizes your digital life, we ship you stuff to organize your physical life!" />
-  <meta property="og:image" content="https://clutter.hackclub.com/images/clutter_banner.png" />
-  <meta property="og:url" content="https://clutter.hackclub.com" />
+  <meta name="title" content="Clutter" />
+  <meta name="description" content="You ship a script that organizes your digital life, we ship you stuff to organize your physical life!" />
+
   <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://clutter.hackclub.com" />
+  <meta property="og:title" content="Clutter" />
+  <meta property="og:description" content="You ship a script that organizes your digital life, we ship you stuff to organize your physical life!" />
+  <meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://clutter.hackclub.com" />
+  <meta property="twitter:title" content="Clutter" />
+  <meta property="twitter:description" content="You ship a script that organizes your digital life, we ship you stuff to organize your physical life!" />
+  <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
+
 </svelte:head>
 
 <style>

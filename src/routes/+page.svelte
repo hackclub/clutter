@@ -8,6 +8,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Londrina+Shadow&family=Nata+Sans:wght@100..900&family=Orbitron:wght@400..900&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet" />
 
+  <meta property="og:title" content="Clutter - YSWS" />
+  <meta property="og:description" content="You ship a script that organizes your digital life, we ship you stuff to organize your physical life!" />
+  <meta property="og:image" content="https://clutter.hackclub.com/images/clutter_banner.png" />
+  <meta property="og:url" content="https://clutter.hackclub.com" />
+  <meta property="og:type" content="website" />
 </svelte:head>
 
 <style>

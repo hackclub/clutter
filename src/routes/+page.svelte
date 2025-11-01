@@ -135,6 +135,9 @@ img {
   z-index: -1; 
 }
 
+del {
+  color: #463d2c;
+}
 
 </style>
 <script>
@@ -184,6 +187,7 @@ img {
 </script>
 
 <div style="background-color: #594e36;">
+
     <div style="background-color: #594e36; overflow: hidden;">
         <div style="transform: rotate(10deg); overflow-x: hidden; padding: 1rem 0;">
             <img 
@@ -192,12 +196,16 @@ img {
                 class="logo-image" 
             />
         </div>
-
+            
         <div style="position: relative; text-align: center; transform: rotate(-5deg); overflow-x: hidden; overflow: hidden;">
+          <h1 class="text-center handwritten drab-dark-brown-2" style="color: #d32f2f; font-size: 1.6rem; position: absolute; top: 26%; left: 50%; transform: translate(-50%, -41%); font-weight: 200; max-width: 600px; text-align: center; overflow-wrap: break-word;">
+            This event has ended! 
+          </h1>
             <img src="images/notebook_paper.png" alt="Notebook paper" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
-            <h1 class="text-center handwritten drab-dark-brown-2" style="color: #334195; font-size: 1.6rem; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -41%); font-weight: 200; max-width: 600px; text-align: center; overflow-wrap: break-word;">
-            <span class="rounded-lg inline-block drab-dark-brown-2" style="text-decoration: none; display: block; width: 100%; line-height: 1.1; ">You ship a script <br/>that organizes your<br> digital life, <br> we ship you stuff to <br>organize your<br> physical life! <br><br> ‎‎‎‎‎‎‎  ‎  ‎  ‎  ‎ </span>
+            <h1 class="text-center handwritten drab-dark-brown-2" style="font-size: 1.6rem; position: absolute; top: 52.5%; left: 50%; transform: translate(-50%, -41%); font-weight: 200; max-width: 600px; text-align: center; overflow-wrap: break-word;">
+            <del><span class="rounded-lg inline-block drab-dark-brown-2" style="text-decoration: none; display: block; width: 100%; line-height: 1.1; ">You ship a script <br/>that organizes your<br> digital life, <br> we ship you stuff to <br>organize your<br> physical life! <br><br></span></del>
             </h1>
+              
         </div>
         
         <br>
@@ -217,7 +225,7 @@ img {
             We’ll also send you some stickers! 🎉
           </p>
         </div>
-        <div style="position: relative; text-align: center; padding: 1rem; display: flex; flex-direction: column; align-items: center; gap: 0.5rem; font-weight: 550; color: #7e846b;">
+        <!-- <div style="position: relative; text-align: center; padding: 1rem; display: flex; flex-direction: column; align-items: center; gap: 0.5rem; font-weight: 550; color: #7e846b;">
           <p class="p-10" style="color: white; margin: 0;">
             {#if responseText}
               Idea: {responseText}
@@ -229,7 +237,7 @@ img {
           <button on:click={reload_tab} style="background-color: white; color: #594E36; font-size: 1rem;" class="handwritten-big p-2.5 rounded hover:scale-105 cursor-pointer">
               New Idea
           </button>
-        </div>
+        </div> -->
         <div class="text-center p-10 flex justify-center made_with_heart" style="position: relative; z-index: 1; font-weight: 700; color: #7e846b; overflow: hidden;">
             Made with  <span class="hover:animate-bounce">❤️</span>  b<a href="/3.14" class="y_tag">y</a> <a href="https://github.com/SuperNinjaCat5" style="margin-left: 0.2vw; margin-right: 0.2vw;" class="names"> Ben </a> & <a href="https://github.com/niiccoo2" style="margin-left: 0.2vw; margin-right: 0.2vw;" class="names"> Nico </a> 
         </div>  
